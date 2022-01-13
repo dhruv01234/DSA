@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+#define ll long long
+
+int main()
+{
+    ll n;
+    cin>>n;
+    ll i = 5;
+    ll ans = 0;
+    while(n>=i){
+        ans += n/i;
+        i *= 5;
+    }
+    cout<<ans;
+    return 0;
+}
